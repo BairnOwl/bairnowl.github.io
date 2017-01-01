@@ -1,0 +1,76 @@
+$total: 50; // total particles
+$time: 4s; // length of animation
+$frames: 80; // total frames in each keyframe
+$perc: 100/$frames * 1%; // percent to increment by in keyframe loop
+
+// helper -- returns -1 or 1 randomly
+@function posOrNeg(){ 
+  @return random() * 2 - 1;
+}
+
+body {
+  background: #222222;
+}
+
+.wrap {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.c {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+@for $i from 1 through $total {
+  $size: (random(15) + 10)+px; // random size, used for width/height; changed from +5
+  $x: 0; // initial x pos
+  $y: 0; // initial y
+  $vx: (random(4) + 8) * posOrNeg(); // x velocity; changed from +2
+  $vy: -(random(10)); // y velocity; changed from 5
+  $o: 1; // initial opacity
+  $vo: 0.99; // fading velocity; changed from 0.96
+  $g: .25; // gravity; changed from 0.1
+  $hue: (360/$total * $i); // hue
+  
+  .c:nth-child(#{$i}){ // grab this particle
+    background-color: hsl($hue, 100%, 50%);
+    width: $size;
+    height: $size;
+    margin-top: -$size/2; // dead center
+    margin-left: -$size/2; // yea..
+    animation: anim#{$i} $time infinite ease-in; // set animation for this particle
+    animation-delay: $i * -($time/$total); // set a negative, even delay for seamless animation
+  }
+  
+  @keyframes anim#{$i}{ // keyframe for this particle
+    @for $j from 1 through $frames{ // loop to generate keyframes
+      
+      #{$j * $perc}{ // set keyframe percentage, $perc
+        transform: translate3d($x+px, $y+px, 0);
+        opacity: $o; 
+      }
+      
+      // update x, y, and opacity
+      
+      $o: $o * $vo; // lower the opacity
+      
+      $vy: $vy + $g; // add gravity
+      
+      @if($vx < 0){ // if x velocity is negative
+        $x: $x - abs($vx); // subtract from x
+      } @else {
+        $x: $x + $vx; // add to x
+      }
+      
+      @if($vy < 0){ // same here for y
+        $y: $y - abs($vy);
+      } @else { 
+        $y: $y + $vy; // boom
+      }
+    }
+  }
+} 
