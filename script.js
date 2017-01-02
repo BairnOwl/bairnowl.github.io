@@ -121,7 +121,7 @@ function addBar(selector, val) {
 
 function initializeModals() {
 
-	var projects = ['rundvous', 'gitbuddy', 'datathon', 'jungo'];
+	var projects = ['rundvous', 'gitbuddy', 'datathon', 'jungo', 'wikiverse', 'soundstock', 'chimehack', 'eventbox', 'alsus', 'hopecream', 'googlevr', 'meta'];
 
 	for (var i in projects) {
 		var selector = '#' + projects[i] + '-proj';
