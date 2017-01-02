@@ -6,6 +6,8 @@ window.addEventListener('load', function() {
     sr.reveal('#skills-circle');
     sr.reveal('#skills', { afterReveal: animateBars });
 
+    initializeModals();
+
     // mouseover image icons for contact section
     $('#email-img').on({
 		 "mouseover" : function() {
@@ -67,8 +69,12 @@ window.addEventListener('load', function() {
         }
     });
 
+	// adds button color change functionality in project section
+    $('.proj-btn').on('click', function() {
+    	$('.proj-btn').removeClass('button-active');
+    	$(this).addClass('button-active');
+    });
 
-    initializeModals();
     
 }, false);
 

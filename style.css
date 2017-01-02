@@ -130,7 +130,24 @@ li {
 
 #project-controls {
 	margin-bottom: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-left: 10vw;
+}
+
+#project-controls button {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.button-active {
+	background-color: #273B7B !important;
+	color: white;
+}
+
+.btn-break {
+	margin-left: 50px;
 }
 
 .portfolio-projects {
