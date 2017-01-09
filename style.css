@@ -6,6 +6,7 @@
 body {
     background-color: #222222;
     font-family: 'Courier', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2 {

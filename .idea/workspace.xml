@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbbcb66e-393b-4f47-8c6e-35fcf2dd5284" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
     </list>
     <ignored path="bairnowl.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +27,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
+            <state relative-caret-position="3255">
+              <caret line="499" column="39" selection-start-line="499" selection-start-column="39" selection-end-line="499" selection-end-column="39" />
               <folding>
-                <marker date="1483282374000" expanded="true" signature="21397:21482" placeholder="..." />
-                <marker date="1483282374000" expanded="true" signature="21397:21509" placeholder="..." />
-                <marker date="1483282374000" expanded="true" signature="21397:21532" placeholder="..." />
-                <marker date="1483282374000" expanded="true" signature="21397:21551" placeholder="..." />
-                <marker date="1483282374000" expanded="true" signature="21397:21570" placeholder="..." />
-                <marker date="1483282374000" expanded="true" signature="21397:21585" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:89897" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:89924" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:89947" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:89966" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:90000" placeholder="..." />
+                <marker date="1483424563000" expanded="true" signature="89863:90020" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -234,15 +233,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
+        <state relative-caret-position="3255">
+          <caret line="499" column="39" selection-start-line="499" selection-start-column="39" selection-end-line="499" selection-end-column="39" />
           <folding>
-            <marker date="1483282374000" expanded="true" signature="21397:21482" placeholder="..." />
-            <marker date="1483282374000" expanded="true" signature="21397:21509" placeholder="..." />
-            <marker date="1483282374000" expanded="true" signature="21397:21532" placeholder="..." />
-            <marker date="1483282374000" expanded="true" signature="21397:21551" placeholder="..." />
-            <marker date="1483282374000" expanded="true" signature="21397:21570" placeholder="..." />
-            <marker date="1483282374000" expanded="true" signature="21397:21585" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:89897" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:89924" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:89947" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:89966" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:90000" placeholder="..." />
+            <marker date="1483424563000" expanded="true" signature="89863:90020" placeholder="..." />
           </folding>
         </state>
       </provider>
